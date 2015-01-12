@@ -1,0 +1,91 @@
+/*
+/
+/ Programming Logic - #3  [Map multiple locations on Google Map]
+/ Developer : Suraj Jain
+/ Blog : https://developersurajjain.blogspot.com/
+/ Website : http://www.surajjain.com/
+/ Email : mail.surajjain@gmail.com
+/
+*/
+@charset "utf-8";
+*{margin:0;padding:0;}
+body {background:#eee;}
+#dsj-main{width:100%;margin:0 auto;max-width:800px; font-family:Arial, Helvetica, sans-serif; font-size:13px}
+#mapform{
+	margin: 5% 0;
+	background: #fff;
+	padding: 10px;
+	border: #BABABA solid 1px;
+	box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+}
+form {margin:20px 0 30px;}
+form h2{ margin-bottom:10px;}
+h1{
+	font-weight: 100;
+	margin-bottom: 25px;
+	color: rgb(24, 18, 121);
+	background: rgb(242, 242, 242);
+	padding: 5px 8px;
+	font-size: 24px;
+}
+.dsj-row{
+	margin: 0px 0px 4px;
+	display: block;
+	background: darkblue;
+	padding: 5px 10px;
+}
+label{
+	font-size: 14px;
+	padding-right: 8px;
+	color: #fff;
+}
+small{
+	float: right;
+	font-size: 11px;
+	line-height: 28px;
+}
+small a{color: blue;text-decoration: none;}
+input{padding: 3px;}
+table {
+	border-collapse: collapse;
+	border-color: rgb(211, 211, 211);
+	border-width: 1px;
+	border-style: solid;
+}
+table > thead {
+	background: rgb(34, 43, 144);
+	color: #fff;
+	line-height: 30px;
+}
+table > thead > tr > th {}
+table > thead > tr > td {}
+table > tbody {line-height: 25px;}
+table > tbody > tr:nth-child(odd) {background: rgb(219, 227, 255);}
+table > tbody > tr:nth-child(even) {}
+table > tbody > tr:hover {background:#eee;}
+table > tbody > tr > th {padding-left: 5px;}
+table > tbody > tr > td {padding-left: 5px;}
+.searchInput,.dsj-filter input{
+	border-color:rgb(242, 242, 242);
+	width: 90%;
+	outline: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+.search-row{ line-height:35px;background: white;}
+.dsj-filter{
+	float: right;
+	margin-bottom: 8px;
+}
+.dsj-filter input{width:auto;}
+#dsj-wrapper {
+    height: 350px;
+}
+
+#map_holder {
+    width: 100%;
+    height: 100%;
+}
+#map-frame{}
