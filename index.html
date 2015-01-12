@@ -1,0 +1,57 @@
+<!--
+/*
+/
+/ Programming Logic - #3  [Map multiple locations on Google Map]
+/ Developer : Suraj Jain
+/ Blog : https://developersurajjain.blogspot.com/
+/ Website : http://www.surajjain.com/
+/ Email : mail.surajjain@gmail.com
+/
+*/
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta charset="utf-8"/>
+<title>Map multiple locations on Google Map</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/dsj-style.css" media="all" />
+<link rel="author" href="https://plus.google.com/117819503181436666904" /></head>
+<body>
+<div id="dsj-main">
+<div id="mapform">
+    <form id="locForm" class="mapinfo" method="POST" action="javascript:;">
+        <h1>#3 - Map multiple locations on Google Map<small>By <a href="http://developersurajjain.blogspot.com/" target="_blank">Suraj Jain</a></small></h1>
+        <div class="dsj-row">
+        	<input type="radio" name="map_option" id="mpo1" value="location" checked="checked" />
+            <label for="mpo1">Top 10 places in Bangalore</label>
+        </div>
+        <div class="dsj-row">
+        	<input type="radio" name="map_option" id="mpo2" value="school" />
+            <label for="mpo2">Top 5 schools in Bangalore</label>
+        </div>
+        <div class="dsj-row">
+        	<input type="radio" name="map_option" id="mpo3" value="hospital" />
+            <label for="mpo3">Top 10 hospitals in Bangalore</label>
+        </div>
+        <div class="dsj-row">
+        	<input type="radio" name="map_option" id="mpo4" value="mall" />
+            <label for="mpo4">Top 10 Malls in Bangalore</label>
+        </div>
+    </form>
+    <div id="map-frame">
+        <iframe id="dsjmapframe" src="map.html" frameborder="0" align="center" width="100%" height="350px"></iframe>
+    </div>
+</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+$(function(e) {
+	$("input[id*=mpo]").click(function(e) {
+        document.getElementById('dsjmapframe').contentDocument.location.reload(true);
+    });
+});
+</script>
+</body>
+</html>
