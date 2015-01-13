@@ -115,7 +115,7 @@ function initialize(loctype) {
     ];
 	
 	// Info Window Content
-    var iconPrefix = {'location':'img/location-icon.png','school':'img/school-icon.png','hospital':'img/hospital-icon.png','mall':'img/bank-icon.png'};
+    var iconPrefix = {'location':'img/location-icon.png','school':'img/school-icon.png','hospital':'img/hospital-icon.png','mall':'img/supermarket-icon.png'};
         
     // Display multiple placeholders on a map
     var infoWindow = new google.maps.InfoWindow(), marker, i;
@@ -147,7 +147,7 @@ function initialize(loctype) {
 
     // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        this.setZoom(11);
         google.maps.event.removeListener(boundsListener);
     });
     
